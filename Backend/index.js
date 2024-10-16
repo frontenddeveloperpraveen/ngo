@@ -12,7 +12,7 @@ app.use(express.json());
 // CORS configuration
 app.use(
   cors({
-    origin: "https://nayepankhfoundation.vercel.app", 
+    origin: "*", 
     methods: ["GET", "POST"],
     credentials: true,
   })
