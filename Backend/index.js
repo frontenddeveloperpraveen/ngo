@@ -12,7 +12,8 @@ app.use(express.json());
 // CORS configuration
 app.use(
   cors({
-    origin: "https://naye-pankh-foundations.vercel.app", // Change this to your frontend URL
+    origin: "https://nayepankhfoundation.vercel.app
+", // Change this to your frontend URL
     methods: ["GET", "POST"],
     credentials: true,
   })
