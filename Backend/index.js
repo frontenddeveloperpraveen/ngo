@@ -28,6 +28,10 @@ admin.initializeApp({
 const db = admin.firestore();
 
 // API route to handle POST requests
+app.get("/", (req, res) => {
+  res.json({ ms: "good" });
+});
+
 app.post("/api/entry/user", async (req, res) => {
   const userData = req.body; // Extract data from request body
   const userEmail = userData.email; // Adjust this field based on your userData structure
