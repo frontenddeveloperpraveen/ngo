@@ -100,7 +100,7 @@ const DashboardPage = () => {
   const [whatsappmsg, setWhatsappmsg] = useState("");
 
   const Copy2Clipboard = () => {
-    const copyField = `https://naye-pankh-foundations.vercel.app//donation?r=${referal}`;
+    const copyField = `https://https://naye-pankh-ngo.vercel.app/donation?r=${referal}`;
     navigator.clipboard
       .writeText(copyField)
       .then(() => {
@@ -126,7 +126,7 @@ const DashboardPage = () => {
       };
 
       const FETCHUSERLINK =
-        "https://npf-backend-praveen.vercel.app/api/entry/user";
+        "https://naye-pankh-ngo.vercel.app/";
 
       axios.defaults.withCredentials = true;
       axios
