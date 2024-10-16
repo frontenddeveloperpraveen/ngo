@@ -38,7 +38,7 @@ app.get("/user", (req, res) => {
   res.json({ message: "Hello from User entry" });
 });
 
-app.post("/", async (req, res) => {
+app.post("/user", async (req, res) => {
   const userData = req.body; // Extract data from request body
   const userEmail = userData.email; // Adjust this field based on your userData structure
   console.log(userEmail[0].emailAddress);
