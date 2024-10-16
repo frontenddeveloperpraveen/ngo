@@ -95,7 +95,7 @@ app.post("/api/entry/user", async (req, res) => {
   }
 });
 
-app.get("/api/entry/user", (req, res) => {
+app.get("/user", (req, res) => {
   res.json({ message: "Hello from User entry" });
 });
 
@@ -187,7 +187,7 @@ app.post("/api/user/donation", async (req, res) => {
   }
 });
 
-app.get("/api/user/donation", (req, res) => {
+app.get("/donation", (req, res) => {
   res.json({ message: "Hello from Donation" });
 });
 
