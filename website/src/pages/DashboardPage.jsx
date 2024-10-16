@@ -100,7 +100,7 @@ const DashboardPage = () => {
   const [whatsappmsg, setWhatsappmsg] = useState("");
 
   const Copy2Clipboard = () => {
-    const copyField = `https://naye-pankh-ngo.vercel.app/donation?r=${referal}`;
+    const copyField = `${import.meta.env.FRONTEND_BASEURL}/donation?r=${referal}`;
     navigator.clipboard
       .writeText(copyField)
       .then(() => {
