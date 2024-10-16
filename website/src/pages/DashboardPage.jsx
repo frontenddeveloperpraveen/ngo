@@ -126,7 +126,7 @@ const DashboardPage = () => {
       };
 
       const FETCHUSERLINK =
-        "https://naye-pankh-ngo.vercel.app/user";
+        `${import.meta.env.BACKEND_BASEURL}/user`;
       
 
       axios.defaults.withCredentials = true;
@@ -139,7 +139,7 @@ const DashboardPage = () => {
           setTransactions(response.transactions);
           setReferal(response.referralId);
           setGraph(response.donations);
-          const websiteLink = `https://naye-pankh-foundations.vercel.app/donation?r=${response.referralId}`;
+          const websiteLink = `${import.meta.env.FRONTEND_BASEURL}/donation?r=${response.referralId}`;
           const message = `Hi, I am raising funds for *NayePankh Foundation* .
 Please support me by donating throught the following link,
 Donation Link : ${websiteLink}
