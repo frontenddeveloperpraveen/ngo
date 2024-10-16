@@ -31,6 +31,12 @@ const db = admin.firestore();
 app.get("/", (req, res) => {
   res.json({ ms: "good" });
 });
+app.get("/donation", (req, res) => {
+  res.json({ message: "Hello from Donation" });
+});
+app.get("/user", (req, res) => {
+  res.json({ message: "Hello from User entry" });
+});
 
 app.post("/api/entry/user", async (req, res) => {
   const userData = req.body; // Extract data from request body
@@ -95,9 +101,7 @@ app.post("/api/entry/user", async (req, res) => {
   }
 });
 
-app.get("/user", (req, res) => {
-  res.json({ message: "Hello from User entry" });
-});
+
 
 app.post("/api/user/donation", async (req, res) => {
   const data = req.body;
@@ -187,9 +191,7 @@ app.post("/api/user/donation", async (req, res) => {
   }
 });
 
-app.get("/donation", (req, res) => {
-  res.json({ message: "Hello from Donation" });
-});
+
 
 // Create HTTP server and listen on port 3000
 const server = http.createServer(app);
