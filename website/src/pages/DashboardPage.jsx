@@ -126,7 +126,7 @@ const DashboardPage = () => {
       };
 
       const FETCHUSERLINK =
-        `${import.meta.env.BACKEND}/user`;
+        'https://naye-pankh-ngo.vercel.app/user';
       
 
       axios.defaults.withCredentials = true;
