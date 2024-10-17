@@ -12,11 +12,12 @@ app.use(express.json());
 // CORS configuration
 app.use(
   cors({
-    origin: ["https://nayepankhfoundation-r48zr639t.vercel.app/", "*"]
+    origin: ["*"], // removed "*"
     methods: ["GET", "POST"],
     credentials: true,
   })
 );
+
 
 // Initialize Firebase
 admin.initializeApp({
