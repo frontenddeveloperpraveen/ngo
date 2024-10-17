@@ -20,9 +20,10 @@ const Navbar = ({ openBurger }) => {
           <MenuIcon />
         </div>
         <img
-          src="https://th.bing.com/th/id/OIP.NlP6LS6u360mxhdr1fzYwQHaHa?rs=1&pid=ImgDetMain"
+          src="https://freepadsforindia.org/wp-content/uploads/2021/12/Naye-Pankh-1.jpg"
           alt=""
           width={75}
+          class="w-20 h-auto filter invert"
         />
       </div>
 
