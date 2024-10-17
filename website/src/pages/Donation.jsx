@@ -70,7 +70,7 @@ const Donation = () => {
     axios.defaults.withCredentials = true;
     axios
       .post(
-       `${import.meta.env.BACKEND_BASEURL}/donation`,
+       "https://naye-pankh-ngo.vercel.app/donation",
         formData
       )
       .then((response) => {
