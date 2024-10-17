@@ -111,7 +111,7 @@ app.post("/user", async (req, res) => {
 
 
 
-app.post("/api/user/donation", async (req, res) => {
+app.post("/donation", async (req, res) => {
   const data = req.body;
 
   const { donation, referral } = data;
