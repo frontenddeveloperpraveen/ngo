@@ -36,15 +36,7 @@ export default function App() {
             />
           </div>
         </SwiperSlide>
-        <SwiperSlide>
-          <div className="h-[50vh] overflow-hidden rounded-md">
-            <img
-              src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1920,fit=crop/YKbL494Mv8Ip3qgy/whatsapp-image-2023-02-05-at-9.13.05-am-AzGEo7LOeZi2gn9v.jpeg"
-              alt=""
-              className="w-full"
-            />
-          </div>
-        </SwiperSlide>
+
         <SwiperSlide>
           <div className=" h-[50vh] overflow-hidden rounded-md">
             <img
