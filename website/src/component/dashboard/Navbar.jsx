@@ -1,6 +1,7 @@
 import { UserButton, UserProfile, useUser } from "@clerk/clerk-react";
 import { HamIcon, MenuIcon } from "lucide-react";
 import React, { useState, useEffect } from "react";
+import "./../../style.css";
 
 const Navbar = ({ openBurger }) => {
   const { isSignedIn, user } = useUser();
