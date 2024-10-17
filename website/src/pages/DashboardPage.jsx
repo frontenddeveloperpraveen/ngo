@@ -100,7 +100,7 @@ const DashboardPage = () => {
   const [whatsappmsg, setWhatsappmsg] = useState("");
 
   const Copy2Clipboard = () => {
-    const copyField = `${import.meta.env.FRONTEND}/donation?r=${referal}`;
+    const copyField = `https://nayepankhfoundation.vercel.app/donation?r=${referal}`;
     navigator.clipboard
       .writeText(copyField)
       .then(() => {
@@ -139,7 +139,7 @@ const DashboardPage = () => {
           setTransactions(response.transactions);
           setReferal(response.referralId);
           setGraph(response.donations);
-          const websiteLink = `${import.meta.env.FRONTEND}/donation?r=${response.referralId}`;
+          const websiteLink = `https://nayepankhfoundation.vercel.app/donation?r=${response.referralId}`;
           const message = `Hi, I am raising funds for *NayePankh Foundation* .
 Please support me by donating throught the following link,
 Donation Link : ${websiteLink}
